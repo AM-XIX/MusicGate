@@ -2,11 +2,11 @@
   {
     "nom": "Clément R",
     "genres": [
-      "Pop",
-      "Rap",
-      "Électro"
+      " Pop",
+      " Rap",
+      " Électro"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 50000,
     "artiste": "Kendrick Lamar",
@@ -26,8 +26,8 @@
   },
   {
     "nom": "Ibrahima",
-    "genres": "Rap",
-    "classe": "dev",
+    "genres": " Rap",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 0,
     "artiste": "Guizmo",
@@ -48,13 +48,13 @@
   {
     "nom": "Agathe",
     "genres": [
-      "Pop",
-      "K-pop",
-      "Rock / Metal",
-      "Indie",
-      "Rap"
+      " Pop",
+      " K-Pop",
+      " Rock / Metal",
+      " Indie",
+      " Rap"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 49000,
     "artiste": "Loud",
@@ -75,10 +75,10 @@
   {
     "nom": "Jessy",
     "genres": [
-      "Pop",
-      "Latino / Reggaeton"
+      " Pop",
+      " Latino / Reggaeton"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Apple Music",
     "minutes": 75998,
     "artiste": "The Weeknd",
@@ -99,10 +99,10 @@
   {
     "nom": "Léna",
     "genres": [
-      "Pop",
-      "Rock / Metal"
+      " Pop",
+      " Rock / Metal"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 53348,
     "artiste": "Bad Omens",
@@ -123,10 +123,10 @@
   {
     "nom": "Estelle",
     "genres": [
-      "Pop",
-      "Rap"
+      " Pop",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 68620,
     "artiste": "Laylow",
@@ -147,13 +147,13 @@
   {
     "nom": "Wendy",
     "genres": [
-      "Pop",
-      "Rock / Metal",
-      "Rap",
-      "Latino / Reggaeton",
-      "Électro"
+      " Pop",
+      " Rock / Metal",
+      " Rap",
+      " Latino / Reggaeton",
+      " Électro"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 49393,
     "artiste": "Mc Kevinho",
@@ -174,10 +174,10 @@
   {
     "nom": "Lucien",
     "genres": [
-      "Pop",
-      "Rap"
+      " Pop",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Deezer",
     "minutes": 16867,
     "artiste": "Nekfeu",
@@ -197,8 +197,8 @@
   },
   {
     "nom": "Jahnoy",
-    "genres": "Rap",
-    "classe": "design",
+    "genres": " Rap",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 15878,
     "artiste": "Dinos",
@@ -218,8 +218,8 @@
   },
   {
     "nom": "Jimmy",
-    "genres": "Rap",
-    "classe": "design",
+    "genres": " Rap",
+    "classe": "Designer",
     "plateforme": "Napster",
     "minutes": 0,
     "artiste": "Dinos",
@@ -240,11 +240,11 @@
   {
     "nom": "Antoine D",
     "genres": [
-      "Rock / Metal",
-      "Indie",
-      "Rap"
+      " Rock / Metal",
+      " Indie",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Apple Music",
     "minutes": 61965,
     "artiste": "Laylow",
@@ -269,11 +269,11 @@
   {
     "nom": "Lina",
     "genres": [
-      "Pop",
-      "Rock / Metal",
-      "Indie"
+      " Pop",
+      " Rock / Metal",
+      " Indie"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 62388,
     "artiste": "ROLE MODEL",
@@ -294,11 +294,11 @@
   {
     "nom": "Lucie",
     "genres": [
-      "Rock / Metal",
-      "Indie",
-      "Électro"
+      " Rock / Metal",
+      " Indie",
+      " Électro"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 10000,
     "artiste": "Stupeflip",
@@ -319,17 +319,17 @@
   {
     "nom": "Louise",
     "genres": [
-      "Pop",
-      "Rock / Metal",
-      "Indie",
-      "Rap"
+      " Pop",
+      " Rock / Metal",
+      " Indie",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 40519,
     "artiste": "Orelsan",
     "trajet": 100,
-    "matinId": "3SgnYOV9ONL0bIHaAcOYE1",
+    "matinId": "62C8Bd6EgEOofLZ1COjF3n",
     "chanson-matin": "Notes pour trop tard d’Orelsan",
     "soirId": "3SgnYOV9ONL0bIHaAcOYE1",
     "chanson-soir": "Notes pour trop tard d’Orelsan",
@@ -344,8 +344,8 @@
   },
   {
     "nom": "Amandine",
-    "genres": "Pop",
-    "classe": "dev",
+    "genres": " Pop",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 3716,
     "artiste": "Doja Cat",
@@ -365,8 +365,8 @@
   },
   {
     "nom": "Victor S",
-    "genres": "Pop",
-    "classe": "dev",
+    "genres": " Pop",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 17533,
     "artiste": "milet",
@@ -386,8 +386,8 @@
   },
   {
     "nom": "Stan",
-    "genres": "Pop",
-    "classe": "design",
+    "genres": " Pop",
+    "classe": "Designer",
     "plateforme": "Deezer",
     "minutes": 57941,
     "artiste": "NF",
@@ -408,10 +408,10 @@
   {
     "nom": "Kylian",
     "genres": [
-      "Rap",
-      "Électro"
+      " Rap",
+      " Électro"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 41860,
     "artiste": "Midwxst",
@@ -432,10 +432,10 @@
   {
     "nom": "Néo",
     "genres": [
-      "Pop",
-      "Rap"
+      " Pop",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Apple Music",
     "minutes": 29000,
     "artiste": "La Fève",
@@ -455,8 +455,8 @@
   },
   {
     "nom": "Thomas",
-    "genres": "Électro",
-    "classe": "design",
+    "genres": " Électro",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 11355,
     "artiste": "Justice",
@@ -477,11 +477,11 @@
   {
     "nom": "Aurélien L",
     "genres": [
-      "Pop",
-      "Rap",
-      "Électro"
+      " Pop",
+      " Rap",
+      " Électro"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Deezer",
     "minutes": 65520,
     "artiste": "Sonbest",
@@ -502,11 +502,11 @@
   {
     "nom": "Chanel",
     "genres": [
-      "Pop",
-      "Rap",
-      "Latino / Reggaeton"
+      " Pop",
+      " Rap",
+      " Latino / Reggaeton"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 6746,
     "artiste": "Amir",
@@ -527,11 +527,11 @@
   {
     "nom": "Victor C",
     "genres": [
-      "Pop",
-      "Rock / Metal",
-      "Indie"
+      " Pop",
+      " Rock / Metal",
+      " Indie"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 3974,
     "artiste": "Twenty One Pilots",
@@ -558,12 +558,12 @@
   {
     "nom": "Aurélien D",
     "genres": [
-      "K-pop",
-      "Rock / Metal",
-      "Rap",
-      "Électro"
+      " K-Pop",
+      " Rock / Metal",
+      " Rap",
+      " Électro"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 47960,
     "artiste": "Green Montana",
@@ -584,10 +584,10 @@
   {
     "nom": "Adel",
     "genres": [
-      "Pop",
-      "Rap"
+      " Pop",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Apple Music",
     "minutes": 36634,
     "artiste": "The Weeknd",
@@ -607,8 +607,8 @@
   },
   {
     "nom": "Antoine L",
-    "genres": "Pop",
-    "classe": "design",
+    "genres": " Pop",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 61403,
     "artiste": "Lady Haha",
@@ -629,11 +629,11 @@
   {
     "nom": "Anna Maria",
     "genres": [
-      "Pop",
-      "Indie",
-      "Rap"
+      " Pop",
+      " Indie",
+      " Rap"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 40193,
     "artiste": "NF",
@@ -653,8 +653,8 @@
   },
   {
     "nom": "Antoine G",
-    "genres": "Rap",
-    "classe": "dev",
+    "genres": " Rap",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 31769,
     "artiste": "Drake",
@@ -675,10 +675,10 @@
   {
     "nom": "Vincent",
     "genres": [
-      "Rap",
-      "Électro"
+      " Rap",
+      " Électro"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Amerigo",
     "minutes": 21900,
     "artiste": "Laylo",
@@ -699,11 +699,11 @@
   {
     "nom": "Edward",
     "genres": [
-      "Pop",
-      "Rap",
-      "Électro"
+      " Pop",
+      " Rap",
+      " Électro"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Deezer",
     "minutes": 51117,
     "artiste": "SCH",
@@ -724,10 +724,10 @@
   {
     "nom": "Clément B",
     "genres": [
-      "Rap",
-      "Classique"
+      " Rap",
+      " Classique"
     ],
-    "classe": "design",
+    "classe": "Designer",
     "plateforme": "Deezer",
     "minutes": 42000,
     "artiste": "La Fève",
@@ -748,12 +748,12 @@
   {
     "nom": "Jules",
     "genres": [
-      "Pop",
-      "Rock / Metal",
-      "Rap",
-      "Électro"
+      " Pop",
+      " Rock / Metal",
+      " Rap",
+      " Électro"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 51457,
     "artiste": "Joji",
@@ -774,11 +774,11 @@
   {
     "nom": "Christelle",
     "genres": [
-      "Pop",
-      "K-pop",
-      "Rock / Metal"
+      " Pop",
+      " K-Pop",
+      " Rock / Metal"
     ],
-    "classe": "dev",
+    "classe": "Dev",
     "plateforme": "Spotify",
     "minutes": 17205,
     "artiste": "Bad Omens",
@@ -798,8 +798,8 @@
   },
   {
     "nom": "Thabian",
-    "genres": "Rap",
-    "classe": "design",
+    "genres": " Rap",
+    "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 72979,
     "artiste": "Disiz",

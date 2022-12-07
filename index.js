@@ -11,35 +11,16 @@ function liveGraph(data) {
     addBars(data);
     filters();
     barToCard(data);
+    barHover();
 }
 
 function addBars(data) {
     for (let i = 0; i < 34; i++) {
         let bar = document.createElement("div")
-        let barHeight = Math.trunc(data[i].minutes / 170);
+        let barHeight = Math.trunc(data[i].minutes / 185);
         let classe = data[i].classe;
         bar.id = i;
         bar.classList.add("minutesBar", classe, barHeight)
-
-        // function fillingCard() {
-        //     // ----- Elements -----
-        //     let nom = document.getElementById('nom');
-        //     let classeElement = document.getElementById('classe');
-        //     let minutes = document.getElementById('minutes');
-        //     let genres = document.getElementById('genres');
-        //     let artiste = document.getElementById('topArtiste');
-        //     let matin = document.getElementById('matin');
-        //     let soir = document.getElementById('soir');
-        //     // ----- Data -----
-        //     nom.innerHTML = data[i].nom;
-        //     classeElement.innerHTML = classe;
-        //     minutes.innerHTML = data[i].minutes;
-        //     genres.innerHTML = data[i].genres;
-        //     artiste.innerHTML = data[i].artiste;
-        //     matin.src = "https://open.spotify.com/embed/track/"+ data[i].matinId +"?utm_source=generator";
-        //     soir.src = "https://open.spotify.com/embed/track/"+ data[i].soirId +"?utm_source=generator";
-        // }
-        // fillingCard();
 
         if(barHeight > 0) {
         bar.style.height = barHeight + "px"
@@ -88,16 +69,24 @@ function filters(data) {
 }
 
 function barToCard(data){
+
+    // ----- Elements list -----
+    let card = document.getElementById('card');
+    let nom = document.getElementById('nom');
+    let classeElement = document.getElementById('classe');
+    let minutes = document.getElementById('minutes');
+    let genres = document.getElementById('genres');
+    let artiste = document.getElementById('topArtiste');
+    let matin = document.getElementById('matin');
+    let soir = document.getElementById('soir');
+
     document.addEventListener('click', function handleClick(event) {
         if(event.target.classList.contains('minutesBar')) {
+
             let barId = event.target.id;
-            let nom = document.getElementById('nom');
-            let classeElement = document.getElementById('classe');
-            let minutes = document.getElementById('minutes');
-            let genres = document.getElementById('genres');
-            let artiste = document.getElementById('topArtiste');
-            let matin = document.getElementById('matin');
-            let soir = document.getElementById('soir');
+
+            // ----- Filling data -----
+            card.style.right = "2vw";
             nom.innerHTML = data[barId].nom;
             classeElement.innerHTML = data[barId].classe;
             minutes.innerHTML = data[barId].minutes;
@@ -105,6 +94,21 @@ function barToCard(data){
             artiste.innerHTML = data[barId].artiste;
             matin.src = "https://open.spotify.com/embed/track/"+ data[barId].matinId +"?utm_source=generator";
             soir.src = "https://open.spotify.com/embed/track/"+ data[barId].soirId +"?utm_source=generator";
+        }
+        if(event.target.id === 'close') {
+            card.style.right = "-40vw";
+        }
+    })
+}
+
+function barHover() {
+    document.addEventListener('mouseover', (event) => {
+        if(event.target.classList.contains('minutesBar')) {
+            let barId = event.target.id;
+            // document.getElementById(barId).style.backgroundColor = "red";
+            // document.addEventListener('mousemove', (event) => {
+            //     document.getElementById(barId).style.backgroundColor = "white";
+            // })
         }
     })
 }

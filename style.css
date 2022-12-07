@@ -75,7 +75,7 @@ button {
 }
 
 #graphZone {
-    margin-top:2vw;
+    margin-top:1vw;
     display:flex;
     align-items:flex-end;
     height: 66vh;
@@ -146,9 +146,8 @@ button {
 }
 
 #card {
-    /* maquette : top 21vh */
-    top:5vh;
-    right:2vw;
+    top:6vh;
+    right:-40vw;
     position:absolute;
     z-index: 100;
     padding:25px 15px 25px 15px;
@@ -157,6 +156,7 @@ button {
     background: rgb(42,42,42);
     background: linear-gradient(rgba(50, 50, 50, 1) 0%, rgba(44, 44, 44, 0.49) 48%, rgba(42, 42, 42, 0) 100%);
     border-radius:8px;
+    transition:.7s ease-in-out;
 }
 
 #card button {
@@ -164,6 +164,11 @@ button {
     background:transparent;
     border:none;
     font-size:20px;
+    transition:.3s ease-in-out;
+}
+
+#card button:hover {
+    color:white;
 }
 
 #card hr {
@@ -197,6 +202,7 @@ button {
 .minutesPerso {
     margin-top:8px;
     color:var(--acent);
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -220,8 +226,9 @@ iframe {
     -moz-transform-origin: 0 0;
 }
 
-#genres {
-    color:#90AAA7;
+.row p {
+    color:var(--acent);
+    font-size: 1.25rem;
 }
 
 .signature {
