@@ -1,0 +1,232 @@
+/* ======== Rules ========
+
+• Positions
+• Margins
+• Dimensions
+• Displays
+• Borders & Colors
+• Fonts
+
+=========================
+*/
+
+:root {
+    --main: #161616;
+    --secondary:rgba(255,255,255,0.16);
+    --acent: #65D36E;
+    --light:#D9D9D9;
+    --writing:white;
+    --font:'Poppins', sans-serif;
+
+}
+
+body {
+    margin:0;
+    padding:0;
+    max-width: 100vw;
+    max-height: 100vh;
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+    background-color: var(--main);
+    color:var(--writing);
+    font-family: var(--font);
+}
+
+h2 {
+    margin:0;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h4 {
+    margin:0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p {
+    margin:0;
+}
+
+button {
+    cursor: pointer;
+}
+
+#main {
+    padding-top:2.7vh;
+    padding-left:3.9vw;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+#ordinatesValues p {
+    display:block;
+    font-size:1rem;
+    font-weight: 500;
+}
+
+#ordinatesTitle {
+    margin-top:3.5vh;
+    font-size:.9rem;
+    font-weight: 500;
+}
+
+#graphZone {
+    margin-top:2vw;
+    display:flex;
+    align-items:flex-end;
+    height: 66vh;
+}
+
+#ordinatesValues {
+    height: 100%;
+    margin-right:.7vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.graphContainer {
+    width: 80%;
+    height: 100%;
+    display:flex;
+    align-items: flex-end;
+    border:1px solid var(--light);
+    border-width: 0px 0px 0px 0.75px;
+}
+
+.minutesBar {
+    cursor: pointer;
+    margin: 0 .5%;
+    width:1.45%;
+    height: 70%;
+    background-color: var(--light);
+    border-radius: 18px;
+    transition:.6s ease-in-out;
+}
+
+.toggleTags {
+    margin-top:1%;
+    display: flex;
+    justify-content: baseline;
+    font-size:1.25rem;
+    font-weight: 400;
+}
+
+.tag {
+    cursor:pointer;
+    margin-right:1.3vw;
+    padding: 0.3% 1.5%;
+    background-color: var(--secondary);
+    border:1px solid var(--secondary);
+    border-radius:23px;
+    font-size: 1rem;
+    transition:.3s ease-in-out;
+}
+
+.tag:hover {
+    background-color:var(--main);
+    color:var(--acent);
+    border-color: var(--acent);
+}
+
+.activeTag {
+    background-color: var(--acent);
+    border: 1px solid var(--acent);
+    color:var(--main);
+}
+
+.activeTag:hover {
+    background-color: var(--acent);
+    color:var(--main);
+}
+
+#card {
+    /* maquette : top 21vh */
+    top:5vh;
+    right:2vw;
+    position:absolute;
+    z-index: 100;
+    padding:25px 15px 25px 15px;
+    width: 22vw;
+    height: auto;
+    background: rgb(42,42,42);
+    background: linear-gradient(rgba(50, 50, 50, 1) 0%, rgba(44, 44, 44, 0.49) 48%, rgba(42, 42, 42, 0) 100%);
+    border-radius:8px;
+}
+
+#card button {
+    color:var(--light);
+    background:transparent;
+    border:none;
+    font-size:20px;
+}
+
+#card hr {
+    margin-top:4vh;
+    width:95%;
+    border: 1px solid #FFFFFF;
+    border-radius:3px;
+}
+
+.identity {
+    margin-top:3vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.identity h3 {
+    margin:0;
+    font-size:1.25rem;
+}
+
+.cardTag {
+    display:inline-block;
+    padding:2% 5%;
+    font-size:0.875rem;
+    font-weight: 400;
+    border-radius: 9px;
+    background-color:rgba(35, 131, 243, 0.15);
+}
+
+.minutesPerso {
+    margin-top:8px;
+    color:var(--acent);
+    font-weight: 600;
+}
+
+.row {
+    margin-bottom:3vh;
+}
+
+.wrap {
+    margin-top:1.4vh;
+    width: 100%; 
+    height: 80px;
+    padding: 0; 
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%; 
+    height: 100%;
+    zoom: 0.75; 
+    -moz-transform: scale(0.75); 
+    -moz-transform-origin: 0 0;
+}
+
+#genres {
+    color:#90AAA7;
+}
+
+.signature {
+    margin:0;
+    width:95%;
+    display: flex;
+    justify-content:flex-end;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataviz</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="main">
+        <h2>Les habitudes musicales des BDDI</h2>
+        <div class="toggleTags">
+            <div id="all" class="tag activeTag">
+                Bddi
+            </div>
+            <div id="design" class="tag">
+                Designers
+            </div>
+            <div id="dev" class="tag">
+                Développeurs
+            </div>
+        </div>
+
+        <div id="card">
+            <button>&#x2715</button>
+            <div class="identity">
+                <h3 id="nom"></h3>
+                <p id="classe" class="cardTag"></p>
+            </div>
+            <p class="minutesPerso"><span id="minutes"></span> min d'écoute</p>
+            <hr>
+            <div class="row">
+                <h4>Genres préférés</h4>
+                <p id="genres"></p>
+            </div>
+            <div class="row">
+                <h4>Top 1 Artiste</h4>
+                <p id="topArtiste"></p>
+            </div>
+            <div class="row">
+                <h4>Musique du matin</h4>
+                <div class="wrap">
+                    <iframe id="matin" style="border-radius:12px" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Musique du soir</h4>
+                <div class="wrap">
+                    <iframe id="soir" style="border-radius:12px" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <p id="ordinatesTitle">Min</p>
+        <div id="graphZone">
+            <div id="ordinatesValues">
+                <p class="values">80 000</p>
+                <p class="values">70 000</p>
+                <p class="values">60 000</p>
+                <p class="values">50 000</p>
+                <p class="values">40 000</p>
+                <p class="values">30 000</p>
+                <p class="values">20 000</p>
+                <p class="values">10 000</p>
+                <p class="values">0</p>
+            </div>
+            <div id="minutesGraph" class="graphContainer">
+            </div>
+        </div>
+        <p class="signature">BDDI</p>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
