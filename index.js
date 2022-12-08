@@ -11,10 +11,11 @@ function liveGraph(data) {
     addBars(data);
     filters();
     barToCard(data);
-    barHover();
+
 }
 
 function addBars(data) {
+    countOccurences(data);
     for (let i = 0; i < 34; i++) {
         let bar = document.createElement("div")
         let barHeight = Math.trunc(data[i].minutes / 185);
@@ -71,6 +72,7 @@ function filters(data) {
 function barToCard(data){
 
     // ----- Elements list -----
+    let allBars = document.getElementsByClassName('minutesBar');
     let card = document.getElementById('card');
     let nom = document.getElementById('nom');
     let classeElement = document.getElementById('classe');
@@ -81,9 +83,24 @@ function barToCard(data){
     let soir = document.getElementById('soir');
 
     document.addEventListener('click', function handleClick(event) {
+        let allBars = document.getElementsByClassName('minutesBar');
+        function clearBars() {
+            for(let i=0; i < allBars.length; i++) {
+                allBars[i].style.backgroundColor = "#D9D9D9";
+            }
+        }
         if(event.target.classList.contains('minutesBar')) {
-
             let barId = event.target.id;
+            let bar = document.getElementById(barId);
+            function selectedBar(classe) {
+                clearBars();
+                if(classe == 'Designer') {
+                    bar.style.backgroundColor = "#FB7153";
+                } else {
+                    bar.style.backgroundColor = "#8C8AFE";
+                }
+            }
+            selectedBar(data[barId].classe);
 
             // ----- Filling data -----
             card.style.right = "2vw";
@@ -97,20 +114,32 @@ function barToCard(data){
         }
         if(event.target.id === 'close') {
             card.style.right = "-40vw";
+            clearBars();
         }
     })
 }
 
-function barHover() {
-    document.addEventListener('mouseover', (event) => {
-        if(event.target.classList.contains('minutesBar')) {
-            let barId = event.target.id;
-            // document.getElementById(barId).style.backgroundColor = "red";
-            // document.addEventListener('mousemove', (event) => {
-            //     document.getElementById(barId).style.backgroundColor = "white";
-            // })
+function countOccurences(data) {
+    //array of genres
+    let countAll = [];
+    let countDesigner = [];
+    let countDev = [];
+    for (let i = 0; i < data.length; i++) {
+        let genres = data[i].genres;
+        for(let j=0; j < genres.length; j++){
+            let genre = data[i].genres[j];
+            countAll[genre] = countAll[genre] ? countAll[genre] + 1 : 1;
+            //filter by class
+            if(data[i].classe == 'Designer') {
+                countDesigner[genre] = countDesigner[genre] ? countDesigner[genre] + 1 : 1;
+            }
+            else {
+                countDev[genre] = countDev[genre] ? countDev[genre] + 1 : 1;
+            }
         }
-    })
+    }
+    console.log(countAll);
+    console.log(countDesigner);
+    console.log(countDev);
 }
-
   
