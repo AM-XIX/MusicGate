@@ -8,14 +8,13 @@ fetch('./data.json')
 });
 
 function liveGraph(data) {
-    addBars(data);
+    // addBars(data);
     filters();
-    barToCard(data);
-
+    // barToCard(data);
+    fillCircles(data);
 }
 
 function addBars(data) {
-    countOccurences(data);
     for (let i = 0; i < 34; i++) {
         let bar = document.createElement("div")
         let barHeight = Math.trunc(data[i].minutes / 185);
@@ -119,7 +118,9 @@ function barToCard(data){
     })
 }
 
-function countOccurences(data) {
+
+function fillCircles(data) {
+
     //array of genres
     let countAll = [];
     let countDesigner = [];
@@ -138,8 +139,27 @@ function countOccurences(data) {
             }
         }
     }
-    console.log(countAll);
-    console.log(countDesigner);
-    console.log(countDev);
+
+    //filling circles
+    let allCircles = document.getElementsByClassName('circle');
+    for(let i=0; i < allCircles.length; i++) {
+
+        let circleId = allCircles[i].id
+        let genreId = " " + circleId;
+        let circle = document.getElementById(circleId);
+
+        let genreCount = countAll[genreId];    
+        let genreDesignerCount = countDesigner[genreId];
+        let genreDevCount = countDev[genreId];
+
+        let genrePercent = Math.trunc((genreCount / data.length) * 100);
+        let genreDesignerPercent = Math.trunc((genreDesignerCount / genreCount) * 100);
+        let genreDevPercent = Math.trunc((genreDevCount / genreCount) * 100);
+
+        circle.innerHTML = "<p><span>"+ circleId +"</span><br><span>" + genrePercent + "%</span></p>";
+
+        let circleSize = genreCount * 10;
+        circle.style.cssText = 'width:' + circleSize + 'px; height:' + circleSize + 'px;'
+    }
 }
   

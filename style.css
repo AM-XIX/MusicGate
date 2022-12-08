@@ -264,6 +264,7 @@ iframe {
     width:92vw;
     height:70vh;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -290,9 +291,6 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.circle p {
     color:var(--main);
     font-size:130%;
 }

@@ -4,7 +4,7 @@
     "genres": [
       " Pop",
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Dev",
     "plateforme": "Spotify",
@@ -50,7 +50,7 @@
     "genres": [
       " Pop",
       " K-Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Indie",
       " Rap"
     ],
@@ -76,7 +76,7 @@
     "nom": "Jessy",
     "genres": [
       " Pop",
-      " Latino / Reggaeton"
+      " Latino-Reggaeton"
     ],
     "classe": "Designer",
     "plateforme": "Apple Music",
@@ -100,7 +100,7 @@
     "nom": "Léna",
     "genres": [
       " Pop",
-      " Rock / Metal"
+      " Rock-Metal"
     ],
     "classe": "Dev",
     "plateforme": "Spotify",
@@ -148,10 +148,10 @@
     "nom": "Wendy",
     "genres": [
       " Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Rap",
-      " Latino / Reggaeton",
-      " Électro"
+      " Latino-Reggaeton",
+      " Electro"
     ],
     "classe": "Designer",
     "plateforme": "Spotify",
@@ -240,7 +240,7 @@
   {
     "nom": "Antoine D",
     "genres": [
-      " Rock / Metal",
+      " Rock-Metal",
       " Indie",
       " Rap"
     ],
@@ -270,7 +270,7 @@
     "nom": "Lina",
     "genres": [
       " Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Indie"
     ],
     "classe": "Designer",
@@ -294,9 +294,9 @@
   {
     "nom": "Lucie",
     "genres": [
-      " Rock / Metal",
+      " Rock-Metal",
       " Indie",
-      " Électro"
+      " Electro"
     ],
     "classe": "Designer",
     "plateforme": "Spotify",
@@ -320,7 +320,7 @@
     "nom": "Louise",
     "genres": [
       " Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Indie",
       " Rap"
     ],
@@ -409,7 +409,7 @@
     "nom": "Kylian",
     "genres": [
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Designer",
     "plateforme": "Spotify",
@@ -455,7 +455,7 @@
   },
   {
     "nom": "Thomas",
-    "genres": " Électro",
+    "genres": " Electro",
     "classe": "Designer",
     "plateforme": "Spotify",
     "minutes": 11355,
@@ -479,7 +479,7 @@
     "genres": [
       " Pop",
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Dev",
     "plateforme": "Deezer",
@@ -504,7 +504,7 @@
     "genres": [
       " Pop",
       " Rap",
-      " Latino / Reggaeton"
+      " Latino-Reggaeton"
     ],
     "classe": "Designer",
     "plateforme": "Spotify",
@@ -528,7 +528,7 @@
     "nom": "Victor C",
     "genres": [
       " Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Indie"
     ],
     "classe": "Dev",
@@ -559,9 +559,9 @@
     "nom": "Aurélien D",
     "genres": [
       " K-Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Designer",
     "plateforme": "Spotify",
@@ -676,7 +676,7 @@
     "nom": "Vincent",
     "genres": [
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Designer",
     "plateforme": "Amerigo",
@@ -701,7 +701,7 @@
     "genres": [
       " Pop",
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Dev",
     "plateforme": "Deezer",
@@ -749,9 +749,9 @@
     "nom": "Jules",
     "genres": [
       " Pop",
-      " Rock / Metal",
+      " Rock-Metal",
       " Rap",
-      " Électro"
+      " Electro"
     ],
     "classe": "Dev",
     "plateforme": "Spotify",
@@ -776,7 +776,7 @@
     "genres": [
       " Pop",
       " K-Pop",
-      " Rock / Metal"
+      " Rock-Metal"
     ],
     "classe": "Dev",
     "plateforme": "Spotify",
