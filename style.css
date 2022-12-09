@@ -20,6 +20,8 @@
     --designer:linear-gradient(#FAE490 0%, #ED8064 100%);
     --dev:linear-gradient(#62D4FA 0%,#61C2F9 50%, #8A84FA 100%);
     --circle:linear-gradient(180deg, #62D4FA 0%, #61C2F9 42.2%, #8BACFF 84.38%);;
+    --switchTransition:.6s ease-in-out;
+
 
 }
 
@@ -34,6 +36,12 @@ body {
     background-color: var(--main);
     color:var(--writing);
     font-family: var(--font);
+}
+
+h1 {
+    margin:0;
+    font-size: 4rem;
+    font-weight: 500;
 }
 
 h2 {
@@ -56,7 +64,76 @@ button {
     cursor: pointer;
 }
 
+#home {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.shape {
+    position:absolute;
+    top:0;
+    z-index:-10;
+    width:15vw;
+    height:15vw;
+    background:linear-gradient(var(--gradient));
+    border-radius:var(--radius);
+}
+
+#sunset {
+    --gradient: 180deg, #5492BF 0%, #3A5794 16.67%, #633279 32.81%, #A24275 49.48%, #D05D77 66.15%, #DA847E 83.85%, #EAB889 100%;
+    --radius:100px;
+    top:2vh;
+    left:8vw;
+    height:54vh;
+}
+
+#sun {
+    --gradient: 180.25deg, #FF8C20 0.22%, #F2FF47 149.56%;
+    --radius:100px 100px 0 0px;
+    top:15vh;
+    left:31vw;
+    height:28vh;
+}
+
+#sky {
+    --gradient: 180deg, #62D4FA 0%, #61C2F9 42.2%, #8BACFF 84.38%;
+    top:25vh;
+    left:54vw;
+    --radius:2px;
+    height:30vh;
+}
+
+#night {
+    --gradient:180.12deg, #D399FF 0.1%, #B56C98 98.09%;
+    --radius:50%;
+    top:22vh;
+    left:77vw;
+}
+
+#home p {
+    margin-top:5vh;
+    font-size:1.5rem;
+    text-transform: uppercase;
+}
+
+#home img {
+    cursor:pointer;
+    margin-top:1.5vh;
+    padding-bottom:5vh;
+    width:3vw;
+    transition:.4s ease-in-out;
+}
+
+#home img:hover {
+    filter:drop-shadow(0px 0px 10px #ffffff);
+}
+
 #main {
+    margin-top:20vh;
     padding-top:2.7vh;
     padding-left:3.9vw;
     width:100%;
@@ -75,6 +152,7 @@ button {
     margin-top:3.5vh;
     font-size:.9rem;
     font-weight: 500;
+    transition:var(--switchTransition);
 }
 
 #graphZone {
@@ -91,6 +169,13 @@ button {
     flex-direction: column;
     justify-content: space-around;
     text-align: right;
+    transition:var(--switchTransition);
+}
+
+.exitOrdinates {
+    position:absolute;
+    top:126vh;
+    left:-10vw;
 }
 
 .graphContainer {
@@ -98,8 +183,9 @@ button {
     height: 100%;
     display:flex;
     align-items: flex-end;
-    border:1px solid var(--light);
-    border-width: 0px 0px 0px 0.75px;
+    border-left:1px solid var(--light);
+    border-width:0.75px;
+    transition:var(--switchTransition);
 }
 
 .minutesBar {
@@ -109,15 +195,14 @@ button {
     height: 70%;
     background-color: var(--light);
     border-radius: 18px;
-    transition:.6s ease-in-out;
+    transition:var(--switchTransition);
+}
+
+.exitMinutesBar {
+    height:0px !important;
 }
 
 .minutesBar:hover {
-
-    /* border-radius: 30px 15px;
-    border-radius: 30px 30px 10px 10px;
-
-    border-radius: 10%; */
     filter:drop-shadow(0px 0px 5px #a8a8a8);
     transition:.3s ease-in-out;
 }
@@ -167,7 +252,7 @@ button {
 }
 
 #card {
-    top:6vh;
+    top:126vh;
     right:-40vw;
     position:absolute;
     z-index: 100;
@@ -272,6 +357,9 @@ iframe {
 }
 
 #allCircles {
+    position:absolute;
+    top:140vh;
+    z-index:-1;
     width: 65vw;
     display:inline-flex;
     flex-wrap: wrap;
@@ -280,6 +368,7 @@ iframe {
 }
 
 #halo {
+    top:140vh;
     left: 0; 
     right: 0; 
     margin: auto; 
@@ -290,6 +379,12 @@ iframe {
     background-color:rgba(124, 189, 225, 0.24);
     border-radius:50%;
     filter: blur(27.5px);
+    transition:var(--switchTransition);
+}
+
+.exitHalo {
+    width:0px !important;
+    height:0px !important;
 }
 
 .circle {
@@ -303,7 +398,13 @@ iframe {
     text-align: center;
     color:var(--light);
     font-size:130%;
-    transition:.6s ease-in-out;
+    transition:var(--switchTransition);
+}
+
+.exitCircle {
+    width:0vw !important;
+    height:0vw !important;
+    font-size:0px !important;
 }
 
 .circle:nth-child(1) {
@@ -344,4 +445,11 @@ iframe {
 
 .pourcentageText {
     font-size:150%;
+}
+
+#footer {
+    margin-top:5vh;
+    width:100vw;
+    height: 100vh;
+    border:1px solid red;
 }
