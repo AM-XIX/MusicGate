@@ -8,6 +8,8 @@ fetch('./data.json')
 
 let div = document.getElementById("minutesGraph")
 
+let inSelect = false;
+
 function liveGraph(data) {
     addBars(data);
     filters();
@@ -36,7 +38,6 @@ function filters(data) {
     document.addEventListener('click', function handleClick(event) {
         let tag = document.getElementsByClassName('tag')
         let allTag = document.getElementById('all')
-        let allBars = document.getElementsByClassName('minutesBar')
 
         let targetedClass = event.target.id
         let filter = document.getElementsByClassName(targetedClass)
@@ -87,25 +88,38 @@ function barToCard(data){
         function clearBars() {
             for(let i=0; i < allBars.length; i++) {
                 allBars[i].style.backgroundColor = "#D9D9D9";
+                allBars[i].style.margin = "0 .7%";
+                allBars[i].style.width = "2.5%";
+                allBars[i].classList.remove('selectedBar');
             }
         }
+
         if(event.target.classList.contains('minutesBar')) {
             let barId = event.target.id;
             let bar = document.getElementById(barId);
+            inSelect = true;
             function selectedBar(classe) {
                 clearBars();
+
                 if(classe == 'Designer') {
                     bar.style.backgroundColor = "#FB7153";
                 } else {
                     bar.style.backgroundColor = "#8C8AFE";
                 }
             }
+
             selectedBar(data[barId].classe);
+            event.target.classList.add('selectedBar');
             classeElement.classList.remove('Designer', 'Dev');
             classeElement.classList.add(data[barId].classe);
 
             // ----- Filling data -----
             card.style.right = "2vw";
+            for(let i=0; i < allBars.length; i++) {
+                allBars[i].style.margin = "0 .5%";
+                allBars[i].style.width = "1.45%";
+            }
+
             nom.innerHTML = data[barId].nom;
             classeElement.innerHTML = data[barId].classe;
             minutes.innerHTML = data[barId].minutes;
@@ -116,6 +130,7 @@ function barToCard(data){
         }
         if(event.target.id === 'close') {
             card.style.right = "-40vw";
+            inSelect = false;
             clearBars();
         }
     })

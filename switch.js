@@ -56,7 +56,7 @@ document.addEventListener('click', function handleClick(event) {
             halo.classList.add("exitHalo");
             minGraph.style.display = "block";
             setTimeout(function() {
-                if(card.style.right = "-40vw" && nom.innerHTML != "") {
+                if(card.style.right = "-40vw" && nom.innerHTML != "" && inSelect) {
                     card.style.right = "2vw";
                 }
                 genreGraph.style.display = "none";                

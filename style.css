@@ -7,7 +7,7 @@
 • Borders & Colors
 • Fonts
 
-=========================
+==========================
 */
 
 :root {
@@ -83,6 +83,14 @@ button {
     border-radius:var(--radius);
 }
 
+.shape:nth-child(even) {
+    animation: shapeEven 1.5s ease-in-out infinite alternate;
+}
+
+.shape:nth-child(odd) {
+    animation: shapeOdd 1.5s ease-in-out infinite alternate;
+}
+
 #sunset {
     --gradient: 180deg, #5492BF 0%, #3A5794 16.67%, #633279 32.81%, #A24275 49.48%, #D05D77 66.15%, #DA847E 83.85%, #EAB889 100%;
     --radius:100px;
@@ -112,6 +120,24 @@ button {
     --radius:50%;
     top:22vh;
     left:77vw;
+}
+
+@keyframes shapeEven {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes shapeOdd {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 #home p {
@@ -190,12 +216,17 @@ button {
 
 .minutesBar {
     cursor: pointer;
-    margin: 0 .5%;
-    width:1.45%;
+    margin: 0 .7%;
+    width:1.65%;
     height: 70%;
     background-color: var(--light);
     border-radius: 18px;
     transition:var(--switchTransition);
+}
+
+.selectedBar {
+    filter:brightness(140%);
+    box-shadow: 0px 0px 10px #959595;
 }
 
 .exitMinutesBar {
@@ -203,8 +234,7 @@ button {
 }
 
 .minutesBar:hover {
-    filter:drop-shadow(0px 0px 5px #a8a8a8);
-    transition:.3s ease-in-out;
+    filter:brightness(140%);
 }
 
 .Designer {
@@ -449,7 +479,32 @@ iframe {
 
 #footer {
     margin-top:5vh;
+    padding-bottom:5vh;
     width:100vw;
     height: 100vh;
-    border:1px solid red;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#footer img {
+    width:50%;
+    margin-bottom:30vh;
+    animation:codeAnimation alternate 1.5s infinite ease-in-out;
+}
+
+@keyframes codeAnimation {
+    0% {
+        filter:brightness(100%);
+    }
+    100% {
+        filter:brightness(125%);
+    }
+}
+
+#footer p {
+    opacity:.7;
+    font-size:.6rem;
+    letter-spacing:1px;
 }
