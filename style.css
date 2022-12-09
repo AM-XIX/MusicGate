@@ -218,6 +218,7 @@ button {
     font-weight: 400;
     border-radius: 9px;
     background-color:rgba(35, 131, 243, 0.15);
+    text-shadow: 0px 0px 5px #9a9a9a;
 }
 
 .minutesPerso {
@@ -261,7 +262,6 @@ iframe {
 
 /* ======= GENRES ======= */
 #circleGraphZone {
-    display:none !important;
     margin-top:5vh;
     width:100vw;
     height:70vh;

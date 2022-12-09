@@ -18,13 +18,13 @@ function liveGraph(data) {
 function addBars(data) {
     for (let i = 0; i < 34; i++) {
         let bar = document.createElement("div")
-        let barHeight = Math.trunc(data[i].minutes / 185);
+        let barHeight = Math.trunc(data[i].minutes / 1260);
         let classe = data[i].classe;
         bar.id = i;
         bar.classList.add("minutesBar", classe, barHeight)
 
         if(barHeight > 0) {
-        bar.style.height = barHeight + "px"
+        bar.style.height = barHeight + "vh"
         } else {
             bar.style.display = "none";
         }
@@ -57,11 +57,11 @@ function filters(data) {
             // ----- Toggle bars -----
             for(let i=0; i < allBars.length; i++) {
                 if(targetedClass === 'all' || allTag.classList.contains('activeTag')) {
-                    allBars[i].style.height = allBars[i].classList[2] + "px";
+                    allBars[i].style.height = allBars[i].classList[2] + "vh";
                 }else {
                     allBars[i].style.height = 0;
                     for(let j=0; j < filter.length; j++) {
-                        filter[j].style.height = filter[j].classList[2] + "px";
+                        filter[j].style.height = filter[j].classList[2] + "vh";
                     }
                 }
             }
@@ -101,6 +101,8 @@ function barToCard(data){
                 }
             }
             selectedBar(data[barId].classe);
+            classeElement.classList.remove('Designer', 'Dev');
+            classeElement.classList.add(data[barId].classe);
 
             // ----- Filling data -----
             card.style.right = "2vw";
