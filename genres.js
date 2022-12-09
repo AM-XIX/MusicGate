@@ -94,7 +94,7 @@ function fillingCircle(target, title, percent) {
 }
 
 function fillingFilteredCircles(target, title, count) {
-    target.innerHTML = "<p><span>"+ title +"</span><br><span class='pourcentageText'>" + count + " fans</span></p>";
+    target.innerHTML = "<p><span class='titleText'>"+ title +"</span><br><span>" + count + "</span></p>";
 
     let circleSize = 0;
     if(count > 10) {
