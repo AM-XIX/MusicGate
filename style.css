@@ -19,6 +19,7 @@
     --font:'Poppins', sans-serif;
     --designer:linear-gradient(#FAE490 0%, #ED8064 100%);
     --dev:linear-gradient(#62D4FA 0%,#61C2F9 50%, #8A84FA 100%);
+    --circle:linear-gradient(180deg, #62D4FA 0%, #61C2F9 42.2%, #8BACFF 84.38%);;
 
 }
 
@@ -154,13 +155,13 @@ button {
     border-color: var(--acent);
 }
 
-.activeTag {
+.activeTag, .activeAddTag {
     background-color: var(--acent);
     border: 1px solid var(--acent);
     color:var(--main);
 }
 
-.activeTag:hover {
+.activeTag:hover, .activeAddTag:hover {
     background-color: var(--acent);
     color:var(--main);
 }
@@ -260,10 +261,19 @@ iframe {
 
 /* ======= GENRES ======= */
 #circleGraphZone {
+    display:none !important;
     margin-top:5vh;
-    width:92vw;
+    width:100vw;
     height:70vh;
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#allCircles {
+    width: 65vw;
+    display:inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -275,24 +285,61 @@ iframe {
     margin: auto; 
     position: absolute;
     z-index: -1;
-    width:35Vw;
+    width:50Vw;
     height:35Vw;
-    background-color:rgba(79, 255, 199, .3);
+    background-color:rgba(124, 189, 225, 0.24);
     border-radius:50%;
-    filter:blur(25px);
+    filter: blur(27.5px);
 }
 
 .circle {
     width:15Vw;
     height:15Vw;
-    background-color:#3DFEB8;
+    background:var(--circle);
     border-radius:50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color:var(--main);
+    color:var(--light);
     font-size:130%;
+    transition:.6s ease-in-out;
+}
+
+.circle:nth-child(1) {
+    margin-top:-10vh;
+}
+
+.circle:nth-child(2) {
+    margin-top:-20vh;
+}
+
+.circle:nth-child(3) {
+    margin-top:10vh;
+    margin-left:-1vw;
+}
+
+.circle:nth-child(4) {
+    margin-top:-10vh;
+}
+
+.circle:nth-child(5) {
+    margin-top:30vh;
+    margin-left:-3vw;
+}
+
+.circle:nth-child(6) {
+    margin-top:-7vh;
+    margin-left:-10vh;
+}
+
+.circle:nth-child(7) {
+    margin-top:-7vh;
+    margin-left:20vh;
+}
+
+.circle p {
+    filter:drop-shadow(0px 0px 5px #a8a8a8);
 }
 
 .pourcentageText {

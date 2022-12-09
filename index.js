@@ -1,4 +1,3 @@
-let div = document.getElementById("minutesGraph")
 fetch('./data.json')
 .then(response => {
     return response.json()})
@@ -7,10 +6,12 @@ fetch('./data.json')
     console.log(err)
 });
 
+let div = document.getElementById("minutesGraph")
+
 function liveGraph(data) {
-    // addBars(data);
+    addBars(data);
     filters();
-    // barToCard(data);
+    barToCard(data);
     fillCircles(data);
 }
 
@@ -116,50 +117,5 @@ function barToCard(data){
             clearBars();
         }
     })
-}
-
-
-function fillCircles(data) {
-
-    //array of genres
-    let countAll = [];
-    let countDesigner = [];
-    let countDev = [];
-    for (let i = 0; i < data.length; i++) {
-        let genres = data[i].genres;
-        for(let j=0; j < genres.length; j++){
-            let genre = data[i].genres[j];
-            countAll[genre] = countAll[genre] ? countAll[genre] + 1 : 1;
-            //filter by class
-            if(data[i].classe == 'Designer') {
-                countDesigner[genre] = countDesigner[genre] ? countDesigner[genre] + 1 : 1;
-            }
-            else {
-                countDev[genre] = countDev[genre] ? countDev[genre] + 1 : 1;
-            }
-        }
-    }
-
-    //filling circles
-    let allCircles = document.getElementsByClassName('circle');
-    for(let i=0; i < allCircles.length; i++) {
-
-        let circleId = allCircles[i].id
-        let genreId = " " + circleId;
-        let circle = document.getElementById(circleId);
-
-        let genreCount = countAll[genreId];    
-        let genreDesignerCount = countDesigner[genreId];
-        let genreDevCount = countDev[genreId];
-
-        let genrePercent = Math.trunc((genreCount / data.length) * 100);
-        let genreDesignerPercent = Math.trunc((genreDesignerCount / genreCount) * 100);
-        let genreDevPercent = Math.trunc((genreDevCount / genreCount) * 100);
-
-        circle.innerHTML = "<p><span>"+ circleId +"</span><br><span>" + genrePercent + "%</span></p>";
-
-        let circleSize = genreCount * 10;
-        circle.style.cssText = 'width:' + circleSize + 'px; height:' + circleSize + 'px;'
-    }
 }
   
